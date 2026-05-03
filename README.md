@@ -23,5 +23,5 @@ Este proyecto sirve para **reducir errores de inversión**. En un contexto empre
 2. **Mejorar la calidad de las decisiones:** Basando el presupuesto de marketing en datos estadísticos y no en suposiciones.
 3. **Prevenir fallos de producto:** Al entender qué clasificaciones de edad funcionan en cada cultura.
 
-##🌱 Aprendizajes
+## 🌱 Aprendizajes
 Aprendí a identificar sesgos en datos de ventas globales y la importancia de analizar promedios por título para no ser engañado por volúmenes totales.
