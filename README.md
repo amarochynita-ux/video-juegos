@@ -1,23 +1,34 @@
-# Análisis de Éxito Comercial en la Industria de Videojuegos (2012-2016)
+# 🎮 Análisis de Éxito en la Industria de Videojuegos (2012-2016)
 
 ## 🎯 Problema
-Identificar los patrones que determinan si un videojuego será un éxito de ventas para optimizar las inversiones en campañas publicitarias de cara al año 2017.
+El mercado de videojuegos es altamente volátil. El reto principal fue identificar qué factores (plataforma, región, críticas) determinan el éxito comercial de un título para planificar las inversiones publicitarias y de stock de cara al año 2017.
 
 ## 📝 Contexto
-El dataset contiene datos históricos de ventas, calificaciones y plataformas. El análisis se centra en el periodo **2012-2016**, considerado el más relevante para predecir tendencias actuales.
+Utilizando un dataset histórico, me enfoqué en el periodo más reciente (2012-2016). Este recorte es fundamental porque el comportamiento del consumidor y la tecnología de las consolas cambian drásticamente cada 5 años, invalidando tendencias antiguas.
 
-## 🛠️ ¿Qué hice?
-1. **Limpieza de Datos:** Tratamiento de valores ausentes en puntuaciones y años de lanzamiento.
-2. **Análisis Regional:** Comparativa de preferencias entre Norteamérica, Europa y Japón.
-3. **Correlación:** Análisis de impacto de las reseñas de críticos vs. usuarios en las ventas finales.
-4. **Pruebas Estadísticas:** Validación de hipótesis sobre diferencias de ventas entre plataformas y géneros mediante pruebas T y Shapiro-Wilk.
+## 🛠️ ¿Qué hice? (Proceso)
+1. **Limpieza de Datos:** Estandarización de nombres de columnas y tratamiento de valores ausentes (imputación de medianas en puntuaciones y eliminación de registros sin año).
+2. **Análisis de Ciclo de Vida:** Identificación de plataformas en crecimiento (PS4, Xbox One) frente a las que están en declive.
+3. **Estadística Aplicada:** Uso de la librería `scipy.stats` para realizar pruebas de Shapiro-Wilk y validar la distribución de los datos.
+4. **Visualización:** Creación de mapas de calor, boxplots y gráficos de dispersión para hallar correlaciones entre reseñas y ventas.
 
-## 📈 Resultados
-* **Dominio de Plataformas:** PS4 y Xbox One lideran el mercado reciente, mientras que plataformas como PS3 y X360 muestran un declive marcado.
-* **Divergencia Regional:** Japón muestra una preferencia única por consolas portátiles (3DS), mientras que en Occidente predominan las consolas de sobremesa.
-* **Impacto de Reseñas:** Existe una correlación positiva moderada entre la puntuación de la crítica y las ventas, pero casi nula con la puntuación de los usuarios.
+## 📈 Resultados (Insights)
+* **El Peso de la Crítica:** Existe una correlación positiva moderada entre el puntaje de la crítica y las ventas; sin embargo, el puntaje de los usuarios no tiene un impacto directo en el éxito comercial.
+* **Diversidad Regional:** En Japón, la consola portátil **3DS** domina el mercado, mientras que en Norteamérica y Europa la **PS4** es la líder indiscutible.
+* **Rating ESRB:** Los juegos con clasificación **"M" (Mature)** generan mayores ingresos en Occidente, pero en Japón este segmento es mucho menor.
 
-## 💡 Conclusiones e Impacto
-* **Estrategia Recomendada:** La inversión debe priorizar lanzamientos en PS4 y títulos con alta calificación de crítica especializada.
-* **Segmentación:** Para el mercado japonés, la estrategia debe ser distinta, enfocándose en plataformas portátiles y géneros específicos (RPG).
-* **Impacto del Negocio:** Este análisis reduce el riesgo de inversión al descartar plataformas obsoletas y centrar el presupuesto en los mercados de mayor crecimiento.
+## 💡 Conclusiones y Recomendaciones
+* **Acción sugerida:** Priorizar el catálogo de 2017 en plataformas **PS4 y Xbox One**.
+* **Gestión de Riesgo:** No basar compras de inventario en "hype" de usuarios, sino en evaluaciones de expertos, ya que estas últimas están más alineadas con la intención de compra real.
+* **Segmentación:** Lanzar campañas diferenciadas para el mercado asiático centradas en portabilidad y clasificaciones aptas para todo público.
+
+## 🚀 Impacto en el Mundo Real
+Este proyecto sirve para **reducir errores de inversión**. En un contexto empresarial, estos hallazgos permiten:
+1. **Reducir pérdidas:** Al no comprar stock de plataformas obsoletas.
+2. **Mejorar la calidad de las decisiones:** Basando el presupuesto de marketing en datos estadísticos y no en suposiciones.
+3. **Prevenir fallos de producto:** Al entender qué clasificaciones de edad funcionan en cada cultura.
+
+## 🧠 Aprendizajes Profesionales
+* Descubrí que la **limpieza de datos** es el paso más crítico; sin tratar los valores "TBD", los promedios de ventas habrían sido erróneos.
+* Aprendí a utilizar **VS Code** como entorno profesional para vincular código local con repositorios globales mediante Git.
+* Si hiciera el proyecto de nuevo, añadiría un análisis de ventas por estación (verano vs. invierno) para optimizar los lanzamientos mensuales.
